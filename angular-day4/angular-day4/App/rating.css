@@ -1,0 +1,18 @@
+﻿body {
+    font-family: "HelveticNeue", sans-serif;
+    font-size: 14px;
+    padding: 20px;
+}
+
+h2 {
+    color: #999;
+    margin-top: 0;
+}
+
+.field {
+    margin-bottom: 1em;
+}
+
+.click-to-edit {
+    display: inline-block;
+}

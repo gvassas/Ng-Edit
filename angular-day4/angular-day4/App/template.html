@@ -1,0 +1,17 @@
+﻿<form name="myForm">
+    <div class="click-to-edit">
+        <div ng-hide="view.editorEnabled">
+            {{value}} 
+            <a ng-click="enableEditor()">Edit</a>
+        </div>
+        
+
+        <div ng-show="view.editorEnabled">
+        <input ng-model="view.editableValue"  ng-pattern={{pattern}} name="edit"  required /><span ng-show="myForm.edit.$error.pattern" class="invalidText" >
+    {{message}}</span>
+            <button type="sumbit" ng-click="save()" ng-disabled="myForm.$invalid">Save</button>
+            or 
+            <a ng-click="disableEditor()">cancel</a>
+        </div>
+        </div>
+</form>
